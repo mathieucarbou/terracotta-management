@@ -62,7 +62,7 @@ public final class ContextualReturn<T> {
 
   @SuppressWarnings("unchecked")
   public static <T> ContextualReturn<T> empty(Context context) {
-    return new ContextualReturn<T>(Context.empty(), (T) NO_RESULT);
+    return new ContextualReturn<T>(context, (T) NO_RESULT);
   }
 
 }
